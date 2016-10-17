@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#89CEEB"
+    tools:context="com.example.qwert.broadcastreceiverwithnotifications.MainActivity">
+
+
+    <TextView
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wifi"
+        android:textColor="#9432CC"
+        android:id="@+id/textViewForWIFI"
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="24sp"
+        android:textColor="#9432CC"
+        android:id="@+id/textViewForStatusWifi"
+        android:layout_alignTop="@+id/textViewForWIFI"
+        android:layout_toRightOf="@+id/textViewForWIFI"
+        android:layout_toEndOf="@+id/textViewForWIFI"
+        android:layout_marginLeft="91dp"
+        android:layout_marginStart="91dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:textSize="24sp"
+        android:textColor="#9432CC"
+        android:id="@+id/textViewForBluetooth"
+        android:layout_marginTop="107dp"
+        android:layout_below="@+id/textViewForWIFI"
+        android:layout_alignLeft="@+id/textViewForWIFI"
+        android:layout_alignStart="@+id/textViewForWIFI" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="24sp"
+        android:textColor="#9432CC"
+        android:id="@+id/textViewForStatusBluetooth"
+        android:layout_alignTop="@+id/textViewForBluetooth"
+        android:layout_toRightOf="@+id/textViewForStatusWifi"
+        android:layout_toEndOf="@+id/textViewForStatusWifi" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="GSM"-->
+        <!--android:id="@+id/textViewForGSM"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="#9432CC"-->
+        <!--android:layout_below="@+id/textViewForBluetooth"-->
+        <!--android:layout_alignLeft="@+id/textViewForBluetooth"-->
+        <!--android:layout_alignStart="@+id/textViewForBluetooth"-->
+        <!--android:layout_marginTop="107dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=" "-->
+        <!--android:id="@+id/textViewForStatusGSM"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="#9432CC"-->
+        <!--android:layout_alignTop="@+id/textViewForGSM"-->
+        <!--android:layout_alignLeft="@+id/textViewForStatusWifi"-->
+        <!--android:layout_alignStart="@+id/textViewForStatusWifi" />-->
+
+</RelativeLayout>
