@@ -14,8 +14,8 @@
         android:text="Wifi"
         android:textColor="#9432CC"
         android:id="@+id/textViewForWIFI"
-        android:layout_marginLeft="111dp"
-        android:layout_marginStart="111dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
         android:layout_marginTop="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -57,27 +57,30 @@
         android:layout_toRightOf="@+id/textViewForStatusWifi"
         android:layout_toEndOf="@+id/textViewForStatusWifi" />
 
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="GSM"-->
-        <!--android:id="@+id/textViewForGSM"-->
-        <!--android:textSize="24sp"-->
-        <!--android:textColor="#9432CC"-->
-        <!--android:layout_below="@+id/textViewForBluetooth"-->
-        <!--android:layout_alignLeft="@+id/textViewForBluetooth"-->
-        <!--android:layout_alignStart="@+id/textViewForBluetooth"-->
-        <!--android:layout_marginTop="107dp" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Airplane mode"
+        android:id="@+id/textViewForAirMode"
+        android:textSize="24sp"
+        android:textColor="#9432CC"
+        android:layout_below="@+id/textViewForBluetooth"
+        android:layout_alignLeft="@+id/textViewForBluetooth"
+        android:layout_alignStart="@+id/textViewForBluetooth"
+        android:layout_marginTop="107dp" />
 
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text=" "-->
-        <!--android:id="@+id/textViewForStatusGSM"-->
-        <!--android:textSize="24sp"-->
-        <!--android:textColor="#9432CC"-->
-        <!--android:layout_alignTop="@+id/textViewForGSM"-->
-        <!--android:layout_alignLeft="@+id/textViewForStatusWifi"-->
-        <!--android:layout_alignStart="@+id/textViewForStatusWifi" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="24sp"
+        android:textColor="#9432CC"
+        android:id="@+id/textViewForStatusAirMode"
+        android:layout_alignBottom="@+id/textViewForAirMode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="56dp"
+        android:layout_marginEnd="56dp" />
+
 
 </RelativeLayout>
