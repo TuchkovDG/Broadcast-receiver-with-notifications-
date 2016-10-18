@@ -6,6 +6,9 @@
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.hardware.telephony" />
+    <uses-permission android:name="android.hardware.telephony.gsm" />
 
     <application
         android:allowBackup="true"
@@ -32,6 +35,14 @@
             android:enabled="true">
             <intent-filter>
                 <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".ReceiverAirplaneMode"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
             </intent-filter>
         </receiver>
 

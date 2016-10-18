@@ -18,7 +18,7 @@ public class NotificationHead extends Notification {
 
     public void outcomeOfSupply(HashMap<String, Integer> statesKeeper) {
         this.statesKeeper = statesKeeper;
-
+        checkKeeper();
     }
 
     private void checkKeeper() {

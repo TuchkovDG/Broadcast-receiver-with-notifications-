@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     static TextView wifiStatus;
     static TextView bluetoothStatus;
-    static TextView f;
+    static TextView airplaneModeStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         wifiStatus = (TextView) findViewById(R.id.textViewForStatusWifi);
         bluetoothStatus = (TextView) findViewById(R.id.textViewForStatusBluetooth);
+        airplaneModeStatus = (TextView) findViewById(R.id.textViewForStatusAirMode);
         SingletonForBroadcast.getInstance().setGlobalContext(this);
     }
 
@@ -60,5 +61,9 @@ public class MainActivity extends AppCompatActivity {
 
     public static void setBluetoothStatus (String status) {
         bluetoothStatus.setText(status);
+    }
+
+    public static void setAirplaneModeStatus(String status) {
+        airplaneModeStatus.setText(status);
     }
 }

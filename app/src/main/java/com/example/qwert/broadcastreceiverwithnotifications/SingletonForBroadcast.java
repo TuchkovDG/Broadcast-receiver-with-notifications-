@@ -9,13 +9,13 @@ import java.util.HashMap;
  */
 public class SingletonForBroadcast {
 
-    private static SingletonForBroadcast ourInstance = new SingletonForBroadcast();
-    private static NotificationHead notificationCenter = new NotificationHead();
+    private static SingletonForBroadcast singlInstance = new SingletonForBroadcast();
+    private static NotificationHead notificationHead = new NotificationHead();
     private Context globalContext;
     private HashMap<String, Integer> statesKeeper = new HashMap<String, Integer>();
 
     public static SingletonForBroadcast getInstance() {
-        return ourInstance;
+        return singlInstance;
     }
 
     private SingletonForBroadcast() {
@@ -31,7 +31,7 @@ public class SingletonForBroadcast {
 
     public void addValue(String key, int value){
         statesKeeper.put(key,value);
-        notificationCenter.outcomeOfSupply(statesKeeper);
+        notificationHead.outcomeOfSupply(statesKeeper);
     }
 
     public HashMap<String,Integer> getValue(){
